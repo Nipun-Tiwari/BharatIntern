@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <title>Temperature Converter</title>
+</head>
+<body>
+    <h1><span id="h1">Temperature</span> <span id="h2">Converter</span></h1>
+    <section id="sec1">
+        <div class="celsius">
+            <p>°C to °F</p>
+            <input type="text" placeholder="Enter in °C" id="inp1">
+            <input type="submit" value="Convert" class="submit1">
+        </div>
+        <div class="fahr">
+            <p>°F to °C</p>
+            <input type="text" placeholder="Enter in °F" id="inp2">
+            <input type="submit" value="Convert" class="submit2">
+        </div>
+    </section>
+    <h2>Result:</h2>
+    <section id="sec2">
+        <div class="result">
+            <p id="res">32</p>
+            <button class="button-33" role="button">Reset</button>
+        </div>
+    </section>
+    <script src="logic.js">
+    </script>
+</body>
+</html>

@@ -1,0 +1,305 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+  }
+  body{
+    font-family: 'Young Serif', serif;
+    background-image: url('images/background.jpg');
+    /* background-repeat: repeat; */
+    /* backface-visibility: 50%; */
+  }
+  nav{
+    z-index: 1;
+    background: #DBE2EF;
+    height: 80px;
+    width: 100%;
+    position: fixed; 
+    top: 0;
+    opacity: 85%;
+  }
+  label.logo{
+    color: #112D4E;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0 100px;
+    font-weight: bold;
+  }
+  nav ul{
+    float: right;
+    margin-right: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    color: black;
+    font-size: 17px;
+    font-weight: bold;
+    padding: 7px 13px;
+    border-radius: 3px;
+    text-transform: uppercase;
+  }
+  a:hover{
+    background: #DBA11C;
+    transition: .5s;
+  } 
+section{
+  font-family: garamond;
+  margin: 20px;
+}
+.About{
+  border-radius: 5px;
+  display: flex;
+  gap: 50px;
+  color:black;
+  line-height: 2rem;
+  background-color: #afbac8a1;
+  padding: 15px;
+  margin-top: 100px;
+ 
+}
+.bio,.bio-img{
+  animation: coming 1s 0.51s both;
+  display: inline-block;
+}
+.bio h1{
+  font-size: 2.4rem; 
+  padding-bottom: 10px;
+}
+.bio p{
+  font-size: 1.5rem; 
+  padding-bottom: 10px;
+}
+span{
+  font-size: 1.5rem;
+}
+.About h2{
+  font-size: 1.875rem;
+  font-style: italic;
+  padding: 6px;
+}
+.bio{
+  width: 70%;
+}
+.bio-img{
+  width: 30%;
+  
+}
+.bio-img img{
+
+  max-width: 100%;
+  height: auto;
+  border-radius: 50%;
+  padding: 5px;
+}
+
+.project{
+  animation: coming 1s 1.51s both;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  display: flex;
+  overflow: hidden;
+  gap: 100px;
+  justify-content: center;
+  padding-bottom: 20px;
+  background-image: url("images/project\ bg.jpg");
+  flex-wrap: wrap;
+  background-size: cover;
+  border-radius: 5px;
+}
+.project h1{
+  font-family: 'Satisfy', cursive;
+  position: relative;
+  text-align:center;
+  padding: 15px;
+  display: block;
+  width: 100%;
+  font-weight: boldest;
+  font-size: 4.5rem;
+  background-color: rgba(0, 0, 0, 0.61);
+  color: white;
+}
+.cards{
+  margin: 15px;
+  color: white;
+  cursor:pointer;
+
+
+  width: 450px;
+  text-align: center;
+  background-color: black;
+  border-radius: 5%;
+}
+.pro-img{
+  background-size: cover;
+  height: 300px;
+  border-radius: 5% 5% 0 0;
+
+}
+#img1{
+  background-image: url('images/snake.png');
+}
+#img2{
+  background-image: url('images/rps1.png');
+}
+#img3{
+  background-image: url('images/calc.png');
+}
+#img4{
+  background-image: url('images/passgen.png');
+}
+#img5{
+  background-image: url('images/musiclib.png');
+}
+.cards h2{
+  padding: 20px;
+  font-size: 2rem;
+  border-bottom: 1px white;
+}
+.cards a{
+  font-size: 30px;
+  padding: 10px;
+  border-radius: 5px;
+  display: block;
+}
+.cards:hover{
+    transform: scale(1.03);
+    border: 2px solid blue;
+    transition: all 0.4s ease-out;
+}
+.contact{
+  margin: 15px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url('images/biobg.jpg');
+  background-color: aquamarine;
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Satisfy', cursive;
+  opacity: 90%;
+  border-radius: 5px;
+}
+.contact h1{
+  animation: coming 1s 0.81s both;
+  font-size: 4.5rem;
+  margin: 30px;
+}
+.contact h2{
+  animation: coming 1s 0.91s both;
+  font-size: 2rem;
+  margin:10px;
+}
+input{
+  animation: coming 1s 4s both;
+  margin: 8px;
+  font-size: 1.2rem;
+  padding: 10px;
+  width: 40%;
+  border-radius: 5px;
+}
+#msg{
+  animation: coming 1s 4s both;
+  margin:8px;
+  height: 150px;
+  width: 40%;
+  padding: 10px 7px 25px 7px;
+  font-size: 1.2rem;
+  border-radius: 5px;
+}
+#submit{
+  animation: coming 1s 4s both;
+  padding:5px; 
+  width: 10%;
+  position: relative;
+  bottom: 38px;
+  background-color: #F7BB96;
+  border-radius: 5px;
+}
+#submit:hover{
+  background-color: red;
+  transform: scale(1.15);
+  transition: all 0.5s;
+}
+footer{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color:black;
+  font-family: 'Satisfy', cursive;
+}
+.handles{
+  animation: coming 1s 5.3s both;
+  display: flex;
+  font-size: 1.5rem;
+}
+.social{
+  margin:6px;
+  padding: 6px 8px 0px 8px;
+  border-radius: 50%;
+}
+.credits{
+  animation: coming 1s 5.3s both;
+  font-size: 1.1rem ;
+}
+.credits p:nth-child(2){
+  text-align: center;
+  margin: 3px;
+}
+
+@keyframes coming{
+  0%{
+    transform: translateY(300px);
+    opacity: 0;
+  }
+  100%{
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+@media (max-width: 719px){
+  label.logo{
+    font-size: 30px;
+    padding: 0 20px
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+  .bio h1{
+    font-size: 2rem;
+  }
+  .bio h2{
+    font-size: 1.5rem;
+  }
+  .bio p{
+    font-size: 1.3rem;
+  }
+
+}
+@media (max-width: 552px) {
+  nav ul{
+    display: none;
+  }
+  label.logo{
+    padding-left: 35vw;
+  }
+  .bio h1{
+    font-size: 1.8rem;
+  }
+  .bio h2{
+    font-size: 1.2rem;
+  }
+  .bio p{
+    font-size: 1.1rem;
+  }
+  #submit{
+    font-size: 0.8rem;
+  }
+}
